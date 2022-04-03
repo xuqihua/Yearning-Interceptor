@@ -9,7 +9,7 @@ chrome.webRequest.onBeforeRequest.addListener(
        // 保存到后端 后续做成功能处理
         $.ajax({
           method: 'POST',
-          url: "http://localtest.it.chehejia.com:18000/sql.php",
+          url: "http://localhost/sql.php",
           data: {
             data: utf8to16(postedString)
           },
